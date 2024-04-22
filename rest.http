@@ -1,0 +1,36 @@
+### Get list from server
+GET http://localhost:8000/api/v1/tasks
+  
+### Post data to server
+POST  http://localhost:8000/api/v1/tasks
+# header of the request
+Content-Type: application/json
+
+#Body of the request, there should be gap between header and body
+{
+    "task": "playing",
+    "hr": 40,
+    "type": "entry"
+}
+  
+### update data
+PATCH   http://localhost:8000/api/v1/tasks
+# header of the request
+Content-Type: application/json
+
+#Body of the request, there should be gap between header and body
+{
+   "type": "bad",
+      "_id": "66259fab8a5e15cbde6d4411"
+}
+
+### delete data
+DELETE    http://localhost:8000/api/v1/tasks
+# header of the request
+Content-Type: application/json
+
+#Body of the request, there should be gap between header and body
+{
+ 
+      "id": "sfAlJv"
+}
